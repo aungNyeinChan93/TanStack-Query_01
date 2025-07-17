@@ -10,8 +10,9 @@ const WithRtkQuery = () => {
   if (error) return <>{error}</>;
   return (
     <React.Fragment>
-      <section>€
-        {data.products &&€
+      <section>
+        €
+        {data.products &&
           Array.isArray(data.products) &&
           data?.products?.map((p: any) => {
             return <div key={p.id}>{p.title}</div>;
