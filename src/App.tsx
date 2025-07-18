@@ -1,5 +1,10 @@
 import React from "react";
-import MultipleFetch from "./components/MultipleFetch";
+import Todo from "./components/Todo";
+// import TestRefreshInterval from "./components/test/TestRefreshIntervel";
+// import AddQuote from "./components/AddQuote";
+// import TestAll from "./components/test/TestAll";
+// import TestServerAction from "./components/test/TestServerAction";
+// import MultipleFetch from "./components/MultipleFetch";
 // import TestTodo from "./components/test/TestTodo";
 // import TestRefreshInterval from "./components/test/TestRefreshIntervel";
 // import TestStaleTime from "./components/test/TestStaleTime";
@@ -27,8 +32,12 @@ const App = () => {
           <TestRefreshInterval recipeId={4} />
         </section> */}
         {/* <TestTodo /> */}
+        {/* <MultipleFetch /> */}
+        {/* <TestAll /> */}
+        {/* <TestServerAction /> */}
+        {/* <AddQuote /> */}
 
-        <MultipleFetch />
+        <Todo />
       </section>
     </React.Fragment>
   );

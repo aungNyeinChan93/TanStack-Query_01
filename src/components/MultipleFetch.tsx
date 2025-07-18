@@ -22,7 +22,7 @@ const MultipleFetch = () => {
   return (
     <React.Fragment>
       <section>
-        <pre>{JSON.stringify(todos, null, 2)}</pre>
+        <pre>{JSON.stringify(todos!.data?.todos[0], null, 2)}</pre>
         <hr className="h-6 bg-red-500 text-red-600" />
         <pre>{JSON.stringify(quotes, null, 2)}</pre>
       </section>
