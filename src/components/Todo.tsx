@@ -22,7 +22,11 @@ const Todo = () => {
     queryFn: fetchTodos,
   });
 
-  const { mutate, data: addTodo } = useMutation({
+  const {
+    mutate,
+    data: addTodo,
+    status,
+  } = useMutation({
     mutationFn: async (newTodo: Todo) => {
       const response = await fetch("https://dummyjson.com/todos/add", {
         method: "POST",
@@ -39,9 +43,11 @@ const Todo = () => {
   });
 
   console.log(addTodo?.todo);
+  console.log(status);
 
   return (
     <React.Fragment>
+      <pre>{JSON.stringify(addTodo, null, 2)}</pre>
       <section>
         <button
           type="button"
@@ -59,3 +65,6 @@ const Todo = () => {
 };
 
 export default Todo;
+
+// pagination
+// page= ?, limit =10  skip= limit * page-1;
