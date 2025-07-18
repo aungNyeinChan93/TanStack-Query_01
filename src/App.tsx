@@ -1,5 +1,6 @@
 import React from "react";
-import TestRefreshInterval from "./components/test/TestRefreshIntervel";
+import TestTodo from "./components/test/TestTodo";
+// import TestRefreshInterval from "./components/test/TestRefreshIntervel";
 // import TestStaleTime from "./components/test/TestStaleTime";
 // import TestQuote from "./components/test/TestQuote";
 // import WithReduxQuery from "./components/WithReduxQuery";
@@ -18,7 +19,14 @@ const App = () => {
         {/* <TestQuote /> */}
         {/* <TestStaleTime /> */}
 
-        <TestRefreshInterval />
+        {/* <section className="flex space-x-0">
+          <TestRefreshInterval />
+          <TestRefreshInterval recipeId={2} />
+          <TestRefreshInterval recipeId={3} />
+          <TestRefreshInterval recipeId={4} />
+        </section> */}
+
+        <TestTodo />
       </section>
     </React.Fragment>
   );
