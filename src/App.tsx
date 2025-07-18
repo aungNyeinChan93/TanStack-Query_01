@@ -1,5 +1,6 @@
 import React from "react";
-import TestTodo from "./components/test/TestTodo";
+import MultipleFetch from "./components/MultipleFetch";
+// import TestTodo from "./components/test/TestTodo";
 // import TestRefreshInterval from "./components/test/TestRefreshIntervel";
 // import TestStaleTime from "./components/test/TestStaleTime";
 // import TestQuote from "./components/test/TestQuote";
@@ -25,8 +26,9 @@ const App = () => {
           <TestRefreshInterval recipeId={3} />
           <TestRefreshInterval recipeId={4} />
         </section> */}
+        {/* <TestTodo /> */}
 
-        <TestTodo />
+        <MultipleFetch />
       </section>
     </React.Fragment>
   );
