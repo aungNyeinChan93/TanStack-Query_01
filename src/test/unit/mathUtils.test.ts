@@ -1,7 +1,8 @@
 import { describe, it, expect, test } from "vitest";
-import { sum, divided, multiply, subtract } from "../../mathUtil";
+import { sum, divided, multiply, subtract, addNumber, totalValue, getOddNumber } from "../../mathUtil";
 
-
+const firstName = 'aung';
+const lastName = 'nyein chan';
 
 describe('sum()', () => {
     it('@param 4 and 4 =>@return must be 8 ', () => {
@@ -37,4 +38,53 @@ describe('mathUtils unit testing', () => {
     it('should be my only one is ', () => {
         // expect('not').toBe('you')
     })
+
+    test('when divided by zero ', () => {
+        expect(() => divided(5, 0)).toThrow('Can not divide by 0');
+    })
 })
+
+test('addNumber array', () => {
+    expect(addNumber(1, 2, 2, 3, 4, 54)).toEqual([1, 2, 2, 3, 4, 54]);
+})
+
+
+it('name should be aung', () => {
+    expect(firstName).toBe('aung');
+})
+it('should be fullName is aung nyein chan ', () => {
+    expect(`${firstName} ${lastName}`).toBe('aung nyein chan')
+})
+
+
+// AAA patern
+it(' full bio ', () => {
+
+    // arrange
+    const name = 'chan';
+    const age = 31;
+    const gender = 'male';
+
+    // action
+    const fullBio = (name: string, age: number, gender: string): string =>
+        `My name is ${name},I am ${age} years old.Gender -${gender}`
+
+    // assert
+    expect(fullBio(name, age, gender)).toBe('My name is chan,I am 31 years old.Gender -male');
+})
+
+
+it('return get to total value ', () => {
+    expect(totalValue(5, 5, 5)).toBe(15)
+})
+
+it('add number return should be even number', () => {
+    expect(getOddNumber(1, 2, 3, 4, 5, 6, 7)).toEqual([1, 3, 5, 7])
+})
+
+test('testing not to be ', () => {
+    const name = 'haha';
+    expect(name).not.toBe('555')
+})
+
+
