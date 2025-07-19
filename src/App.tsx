@@ -1,6 +1,7 @@
 import React from "react";
-import Todo from "./components/Todo";
+
 import TestPagination from "./components/TestPagination";
+// import Todo from "./components/Todo";
 // import TestRefreshInterval from "./components/test/TestRefreshIntervel";
 // import AddQuote from "./components/AddQuote";
 // import TestAll from "./components/test/TestAll";
@@ -38,7 +39,6 @@ const App = () => {
         {/* <TestServerAction /> */}
         {/* <AddQuote /> */}
         {/* <Todo /> */}
-
         <TestPagination />
       </section>
     </React.Fragment>

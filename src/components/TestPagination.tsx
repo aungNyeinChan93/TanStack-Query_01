@@ -16,6 +16,8 @@ const TestPagination = () => {
     },
   });
 
+  console.log(todos);
+
   return (
     <React.Fragment>
       <section>
@@ -46,7 +48,7 @@ const TestPagination = () => {
           <button
             className="px-4 py-2 text-center mx-2 rounded bg-red-500"
             type="button"
-            onClick={() => setCurrentPage((pre) => (pre < 25 ? pre + 1 : 1))}
+            onClick={() => setCurrentPage((pre) => (pre < 26 ? pre + 1 : 1))}
           >
             Next
           </button>
