@@ -6,8 +6,10 @@ describe('testing fetch . . ', () => {
         return response.ok;
     };
 
-    it('should be instane of promise response ', () => {
-        expect(isResponseOK()).toBeInstanceOf(Promise)
+    it('should be instane of promise response ', async () => {
+        const result = await isResponseOK()
+        // expect(isResponseOK()).toBeInstanceOf(Promise)
+        expect(result).toBe(true)
     })
 });
 
